@@ -1,0 +1,13 @@
+@mixin inter() {
+  font-family: "Inter";
+}
+
+@mixin jet() {
+  font-family: "JetBrains Mono";
+}
+
+@mixin display() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
