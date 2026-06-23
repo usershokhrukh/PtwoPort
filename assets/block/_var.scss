@@ -1,44 +1,24 @@
-// #121417 // main bg
+// $main-bg: #1e1d1d; // main bg
 
-// #1e2227 // navbar, sidebar
+// $ns-bar: #1c232bf9; // navbar, sidebar
 
-// #2c313a // borders,
+// $over-bg: #3939390c;
 
-// #c1c9d7 // text
+// $borders: #2c313a; // borders,
 
-// #21262e // hover
+// $text: #e8edf7; // text
+
+// $hover-box: #21262e; // hover
 
 
-// #24f274 // get
-// #24a0f2 // post
-// #f2b024 // put
-// #F43F5E // delete
+$get: #24f274; // get
+$post: #24a0f2; // post
+$put: #f2b024; // put
+$delete: #F43F5E; // delete
 
-body {
-  background-color: #121417;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
-.home__text {
-  background-color:#f2b024;
-}
-
-.boxes {
-  padding: 10px;
-  width: 100%;
-}
-
-.box {
-  background-color: #1e2227;
-}
-.box-1 {
-  background-color: #2c313a;
-}
-.box-2 {
-  background-color: #c1c9d7;
-}
-.box-3 {
-  background-color: #21262e;
-}
+$main-bg: #1c232bf9;
+$ns-bar: #131920;
+$borders: #3a4049;
+$text: #D1D7E0;
+// $hover-box:
