@@ -54,20 +54,28 @@ body {
 
 .get {
   padding: 10px;
-  background-color: #24f274;
+  background-color: rgba(46, 160, 67, 0.15);
+  color: #3fb950;
+  border: 1px solid rgba(46, 160, 67, 0.4);
 }
 
 .delete {
   padding: 10px;
-  background-color: #F43F5E;
+  background-color: rgba(248, 81, 73, 0.15);
+  color: #f85149;
+  border: 1px solid rgba(248, 81, 73, 0.4);
 }
 
 .put {
   padding: 10px;
-  background-color: #f2b024;
+  background-color: rgba(210, 153, 34, 0.15);
+  color: #d29922;
+  border: 1px solid rgba(210, 153, 34, 0.4);
 }
 
 .post {
   padding: 10px;
-  background-color: #24a0f2;
+  background-color: rgba(56, 139, 253, 0.15);
+  color: #58a6ff;
+  border: 1px solid rgba(56, 139, 253, 0.4);
 }/*# sourceMappingURL=style.css.map */
