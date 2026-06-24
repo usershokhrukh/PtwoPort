@@ -1,3 +1,40 @@
+:root {
+  --color-coal-100: #E3E3E0;
+  --color-coal-500: #242422;
+  --color-coal-700: #1C1C1A;
+  --color-coal-800: #0E100F;
+  --color-coal-hover: #2D2D2A;
+  --color-coal-border: #3D3D39;
+  --color-gray-warm: #969690;
+  --color-pure-white: #ffffff;
+  --color-green-base: 135, 195, 143;
+  --color-blue-base: 78, 205, 196;
+  --color-yellow-base: 244, 162, 97;
+  --color-red-base: 231, 111, 81;
+  --color-green-solid: #68A670;
+  --color-red-solid: #D15A42;
+  --color-brand-accent: #E07A5F;
+  --bg-app-main: var(--color-coal-500);
+  --bg-app-sidebar: var(--color-coal-700);
+  --bg-app-hover: var(--color-coal-hover);
+  --bg-app-dark: var(--color-coal-800);
+  --border-app-default: var(--color-coal-border);
+  --text-app-main: var(--color-coal-100);
+  --text-app-muted: var(--color-gray-warm);
+  --btn-green-bg: rgba(var(--color-green-base), 0.12);
+  --btn-green-txt: rgb(var(--color-green-base));
+  --btn-green-brd: rgba(var(--color-green-base), 0.35);
+  --btn-blue-bg: rgba(var(--color-blue-base), 0.12);
+  --btn-blue-txt: rgb(var(--color-blue-base));
+  --btn-blue-brd: rgba(var(--color-blue-base), 0.35);
+  --btn-yellow-bg: rgba(var(--color-yellow-base), 0.12);
+  --btn-yellow-txt: rgb(var(--color-yellow-base));
+  --btn-yellow-brd: rgba(var(--color-yellow-base), 0.35);
+  --btn-red-bg: rgba(var(--color-red-base), 0.12);
+  --btn-red-txt: rgb(var(--color-red-base));
+  --btn-red-brd: rgba(var(--color-red-base), 0.35);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +46,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(28, 35, 43, 0.9764705882);
+  background-color: var(--bg-app-main);
   align-items: start;
   min-height: 100vh;
 }
@@ -20,7 +57,7 @@ body {
   justify-content: center;
   font-family: "Inter";
   font-size: 13px;
-  color: #D1D7E0;
+  color: var(--text-app-main);
   align-items: start;
   justify-content: start;
   flex-grow: 2;
@@ -29,17 +66,19 @@ body {
 
 .sidebar {
   padding: 100px;
-  background-color: #131920;
+  background-color: var(--bg-app-sidebar);
   flex-grow: 1;
   max-width: 340px;
   height: calc(100vh - 40px);
-  border-right: 1px solid #3a4049;
+  border-right: 1px solid var(--border-app-default);
 }
 
 .main-section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 10px;
   flex-grow: 1;
   height: calc(100vh - 40px);
 }
@@ -47,35 +86,45 @@ body {
 .header {
   flex-grow: 0;
   width: 100%;
-  background-color: #131920;
-  border-bottom: 1px solid #3a4049;
+  background-color: var(--bg-app-sidebar);
+  border-bottom: 1px solid var(--border-app-default);
   height: 40px;
 }
 
 .get {
   padding: 10px;
-  background-color: rgba(46, 160, 67, 0.15);
-  color: #3fb950;
-  border: 1px solid rgba(46, 160, 67, 0.4);
-}
-
-.delete {
-  padding: 10px;
-  background-color: rgba(248, 81, 73, 0.15);
-  color: #f85149;
-  border: 1px solid rgba(248, 81, 73, 0.4);
-}
-
-.put {
-  padding: 10px;
-  background-color: rgba(210, 153, 34, 0.15);
-  color: #d29922;
-  border: 1px solid rgba(210, 153, 34, 0.4);
+  background-color: var(--btn-green-bg);
+  color: var(--btn-green-txt);
+  border: 1px solid var(--btn-green-brd);
+  box-shadow: 0px 0px 20px 5px var(--btn-green-bg);
 }
 
 .post {
   padding: 10px;
-  background-color: rgba(56, 139, 253, 0.15);
-  color: #58a6ff;
-  border: 1px solid rgba(56, 139, 253, 0.4);
+  background-color: var(--btn-blue-bg);
+  color: var(--btn-blue-txt);
+  border: 1px solid var(--btn-blue-brd);
+  box-shadow: 0px 0px 20px 5px var(--btn-blue-bg);
+}
+
+.put {
+  padding: 10px;
+  background-color: var(--btn-yellow-bg);
+  color: var(--btn-yellow-txt);
+  border: 1px solid var(--btn-yellow-brd);
+  box-shadow: 0px 0px 20px 5px var(--btn-yellow-bg);
+}
+
+.delete {
+  padding: 10px;
+  background-color: var(--btn-red-bg);
+  color: var(--btn-red-txt);
+  border: 1px solid var(--btn-red-brd);
+  box-shadow: 0px 0px 20px 5px var(--btn-red-bg);
+}
+
+.text {
+  padding: 10px;
+  background-color: var(--color-brand-accent);
+  color: var(--bg-app-dark);
 }/*# sourceMappingURL=style.css.map */

@@ -1,41 +1,48 @@
-// $main-bg: #1e1d1d; // main bg
+:root {
+  // 1. PRIMITIVE TOKENS (Asliy ranglar bazasi)
+  --color-coal-100: #E3E3E0;
+  --color-coal-500: #242422;
+  --color-coal-700: #1C1C1A;
+  --color-coal-800: #0E100F;
+  --color-coal-hover: #2D2D2A;
+  --color-coal-border: #3D3D39;
+  --color-gray-warm: #969690;
+  --color-pure-white: #ffffff;
 
-// $ns-bar: #1c232bf9; // navbar, sidebar
+  // HTTP Metod ranglari (Baza)
+  --color-green-base: 135, 195, 143;
+  --color-blue-base: 78, 205, 196;
+  --color-yellow-base: 244, 162, 97;
+  --color-red-base: 231, 111, 81;
+  
+  --color-green-solid: #68A670;
+  --color-red-solid: #D15A42;
+  --color-brand-accent: #E07A5F; 
 
-// $over-bg: #3939390c;
+  // 2. SEMANTIC TOKENS (Uslub va funksiya chalkashligi uchun)
+  --bg-app-main: var(--color-coal-500);
+  --bg-app-sidebar: var(--color-coal-700);
+  --bg-app-hover: var(--color-coal-hover);
+  --bg-app-dark: var(--color-coal-800);
+  
+  --border-app-default: var(--color-coal-border);
+  --text-app-main: var(--color-coal-100);
+  --text-app-muted: var(--color-gray-warm);
 
-// $borders: #2c313a; // borders,
+  // Button Semantic Mapping
+  --btn-green-bg: rgba(var(--color-green-base), 0.12);
+  --btn-green-txt: rgb(var(--color-green-base));
+  --btn-green-brd: rgba(var(--color-green-base), 0.35);
 
-// $text: #e8edf7; // text
+  --btn-blue-bg: rgba(var(--color-blue-base), 0.12);
+  --btn-blue-txt: rgb(var(--color-blue-base));
+  --btn-blue-brd: rgba(var(--color-blue-base), 0.35);
 
-// $hover-box: #21262e; // hover
+  --btn-yellow-bg: rgba(var(--color-yellow-base), 0.12);
+  --btn-yellow-txt: rgb(var(--color-yellow-base));
+  --btn-yellow-brd: rgba(var(--color-yellow-base), 0.35);
 
-
-$green-button-bg: rgba(46, 160, 67, 0.15);
-$green-button-text: #3fb950; 
-$green-button-border: rgba(46, 160, 67, 0.4);
-
-
-
-$blue-button-bg: rgba(56, 139, 253, 0.15);
-$blue-button-text: #58a6ff; 
-$blue-button-border: rgba(56, 139, 253, 0.4);
-
-
-
-$yellow-button-bg: rgba(210, 153, 34, 0.15);
-$yellow-button-text: #d29922; 
-$yellow-button-border: rgba(210, 153, 34, 0.4);
-
-
-
-$red-button-bg: rgba(248, 81, 73, 0.15);
-$red-button-text: #f85149; 
-$red-button-border: rgba(248, 81, 73, 0.4);
-
-
-$main-bg: #1c232bf9;
-$ns-bar: #131920;
-$borders: #3a4049;
-$text: #D1D7E0;
-// $hover-box:
+  --btn-red-bg: rgba(var(--color-red-base), 0.12);
+  --btn-red-txt: rgb(var(--color-red-base));
+  --btn-red-brd: rgba(var(--color-red-base), 0.35);
+}

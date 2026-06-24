@@ -7,7 +7,7 @@
 body {
   @include display();
   flex-direction: column;
-  background-color: $main-bg;
+  background-color: var(--bg-app-main);
   align-items: start;
   min-height: 100vh;
 }
@@ -16,8 +16,7 @@ body {
   @include display();
   @include inter();
   font-size: 13px;
-  // font-weight: 300;
-  color: $text;
+  color: var(--text-app-main);
   align-items: start;
   justify-content: start;
   flex-grow: 2;
@@ -26,16 +25,17 @@ body {
 
 .sidebar {
   padding: 100px;
-  background-color: $ns-bar;
+  background-color: var(--bg-app-sidebar);
   flex-grow: 1;
   max-width: 340px;
   height: calc(100vh - 40px);
-  border-right: 1px solid $borders;
+  border-right: 1px solid var(--border-app-default); 
 }
 
 .main-section {
   @include display();
-  // background-color: $main-bg;
+  flex-direction: column;
+  gap: 10px;
   flex-grow: 1;
   height: calc(100vh - 40px);
 }
@@ -43,35 +43,45 @@ body {
 .header {
   flex-grow: 0;
   width: 100%;
-  background-color: $ns-bar;
-  border-bottom: 1px solid $borders;
+  background-color: var(--bg-app-sidebar); 
+  border-bottom: 1px solid var(--border-app-default);
   height: 40px;
 }
 
 .get {
   padding: 10px;
-  background-color: $green-button-bg;
-  color: $green-button-text;
-  border: 1px solid $green-button-border;
-}
-
-.delete {
-  padding: 10px;
-  background-color: $red-button-bg;
-  color: $red-button-text;
-  border: 1px solid $red-button-border;
-}
-
-.put {
-  padding: 10px;
-  background-color: $yellow-button-bg;
-  color: $yellow-button-text;
-  border: 1px solid $yellow-button-border;
+  background-color: var(--btn-green-bg);
+  color: var(--btn-green-txt);
+  border: 1px solid var(--btn-green-brd);
+  box-shadow: 0px 0px 20px 5px var(--btn-green-bg);
 }
 
 .post {
   padding: 10px;
-  background-color: $blue-button-bg;
-  color: $blue-button-text;
-  border: 1px solid $blue-button-border;
+  background-color: var(--btn-blue-bg);
+  color: var(--btn-blue-txt);
+  border: 1px solid var(--btn-blue-brd);
+  box-shadow: 0px 0px 20px 5px var(--btn-blue-bg);
+}
+
+.put {
+  padding: 10px;
+  background-color: var(--btn-yellow-bg);
+  color: var(--btn-yellow-txt);
+  border: 1px solid var(--btn-yellow-brd);
+  box-shadow: 0px 0px 20px 5px var(--btn-yellow-bg);
+}
+
+.delete {
+  padding: 10px;
+  background-color: var(--btn-red-bg);
+  color: var(--btn-red-txt);
+  border: 1px solid var(--btn-red-brd);
+  box-shadow: 0px 0px 20px 5px var(--btn-red-bg); 
+}
+
+.text {
+  padding: 10px;
+  background-color: var(--color-brand-accent); 
+  color: var(--bg-app-dark);
 }
