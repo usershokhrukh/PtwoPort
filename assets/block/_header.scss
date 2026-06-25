@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  background-color: var(--bg-app-sidebar);
+  border-bottom: 1px solid var(--border-app-default);
+
+  &__main {
+    @include padding();
+  }
+
+  &__main-text {
+      @include inter();
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--color-pure-white)
+  }
+}
