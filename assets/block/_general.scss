@@ -9,79 +9,42 @@ body {
   flex-direction: column;
   background-color: var(--bg-app-main);
   align-items: start;
+  justify-content: start;
   min-height: 100vh;
 }
 
-.main {
-  @include display();
-  @include inter();
-  font-size: 13px;
-  color: var(--text-app-main);
-  align-items: start;
-  justify-content: start;
-  flex-grow: 2;
-  width: 100%;
-}
+// .main {
+//   @include display();
+//   @include inter();
+//   font-size: 13px;
+//   color: var(--text-app-main);
+//   align-items: start;
+//   justify-content: start;
+//   flex-grow: 2;
+//   width: 100%;
+// }
 
-.sidebar {
-  padding: 100px;
-  background-color: var(--bg-app-sidebar);
-  flex-grow: 1;
-  max-width: 340px;
-  height: calc(100vh - 40px);
-  border-right: 1px solid var(--border-app-default); 
-}
+// .sidebar {
+//   padding: 100px;
+//   background-color: var(--bg-app-sidebar);
+//   flex-grow: 1;
+//   max-width: 340px;
+//   height: calc(100vh - 40px);
+//   border-right: 1px solid var(--border-app-default); 
+// }
 
-.main-section {
-  @include display();
-  flex-direction: column;
-  gap: 10px;
-  flex-grow: 1;
-  height: calc(100vh - 40px);
-}
+// .main-section {
+//   @include display();
+//   flex-direction: column;
+//   gap: 10px;
+//   flex-grow: 1;
+//   height: calc(100vh - 40px);
+// }
 
-.header {
-  flex-grow: 0;
-  width: 100%;
-  background-color: var(--bg-app-sidebar); 
-  border-bottom: 1px solid var(--border-app-default);
-  height: 40px;
-}
-
-.get {
-  padding: 10px;
-  background-color: var(--btn-green-bg);
-  color: var(--btn-green-txt);
-  border: 1px solid var(--btn-green-brd);
-  box-shadow: 0px 0px 20px 5px var(--btn-green-bg);
-}
-
-.post {
-  padding: 10px;
-  background-color: var(--btn-blue-bg);
-  color: var(--btn-blue-txt);
-  border: 1px solid var(--btn-blue-brd);
-  box-shadow: 0px 0px 20px 5px var(--btn-blue-bg);
-}
-
-.put {
-  padding: 10px;
-  background-color: var(--btn-yellow-bg);
-  color: var(--btn-yellow-txt);
-  border: 1px solid var(--btn-yellow-brd);
-  box-shadow: 0px 0px 20px 5px var(--btn-yellow-bg);
-}
-
-.delete {
-  padding: 10px;
-  background-color: var(--btn-red-bg);
-  color: var(--btn-red-txt);
-  border: 1px solid var(--btn-red-brd);
-  box-shadow: 0px 0px 20px 5px var(--btn-red-bg); 
-}
-
-.text {
-  padding: 10px;
-  background-color: var(--color-brand-accent); 
-  color: var(--bg-app-dark);
-}
+// .header {
+//   // flex-grow: 0;
+//   width: 100%;
+//   background-color: var(--bg-app-sidebar); 
+//   border-bottom: 1px solid var(--border-app-default);
+//   height: 40px;
+// }

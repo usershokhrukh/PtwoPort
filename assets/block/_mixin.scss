@@ -11,3 +11,7 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin padding() {
+  padding: 10px;
+}
