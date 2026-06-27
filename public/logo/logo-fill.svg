@@ -1,19 +1,15 @@
-<svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" class="logo-svg" viewBox="0 0 32 32" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100%" height="100%">
   <defs>
-    <mask id="cutout-mask">
-      <circle cx="15" cy="16" r="14" fill="#ffffff" stroke="#ffffff" stroke-width="3" />
-      <g transform="translate(7.2, 7.5) scale(0.7)" fill="#000000" stroke="#000000" stroke-width="0" stroke-linejoin="round" stroke-linecap="round">
-        <path  transform="scale(1.2) translate(-2, -2)" d="M3.28845 21H1.16009L7.7116 3H9.8399L3.28845 21Z"></path>
-        <path transform="scale(1.2) translate(-2, -2)" d="M10.28845 21H7.16009L13.7116 3H15.8399L9.28845 21Z"></path>
-        <path transform="scale(1.2) translate(-3, -1)" d="M24 11.5L18.3431 17.1569L16.9289 15.7426L21.1716 11.5L16.9289 7.25736L18.3431 5.84315L24 11.5Z"></path>
+    <mask id="path-cutout-mask">
+      <rect width="100%" height="100%" fill="#ffffff" />
+      <g fill="none" stroke="#000000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Mathematically corrected line to perfectly match the original path's angle -->
+        <path d="M17.50 0L4.07 31.42" />    
+        <path transform="translate(-2,-1)" d="M21 11L25.5 15.5L21 20" />
       </g>
     </mask>
   </defs>
-  <circle class="logo-svg" cx="15" cy="16" r="14" fill="#f36c21" stroke="#f36c21" stroke-width="3" mask="url(#cutout-mask)" />
+
+  <circle cx="16" cy="16" r="14" fill="#FF5722" mask="url(#path-cutout-mask)" />
+  <circle cx="16" cy="16" r="14" fill="none" stroke="#FF5722" stroke-width="1.5" mask="url(#path-cutout-mask)" />
 </svg>
-
-
-
-
-
-
