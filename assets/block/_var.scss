@@ -6,6 +6,8 @@
   --color-coal-400: #4F4F4E;
   --color-coal-500: #242422;
   --color-coal-700: #1C1C1A;
+  --color-coal-600: #20201e;
+  --color-coal-650: #181818;
   --color-coal-800: #0E100F;
   --color-coal-hover: #2D2D2A;
   --color-coal-border: #2b2b28;
@@ -16,7 +18,7 @@
   --color-green-base: 135, 195, 143;
   --color-blue-base: 78, 205, 196;
   --color-yellow-base: 244, 162, 97;
-  --color-red-base: 231, 111, 81;
+  --color-red-base: 	239,	62,	66;
   
   --color-green-solid: #68A670;
   --color-red-solid: #D15A42;
@@ -24,7 +26,7 @@
 
   // 2. SEMANTIC TOKENS (Uslub va funksiya chalkashligi uchun)
   --bg-app-main: var(--color-coal-500);
-  --bg-app-sidebar: var(--color-coal-700);
+  --bg-app-sidebar: var(--color-coal-600);
   --bg-app-hover: var(--color-coal-hover);
   --bg-app-dark: var(--color-coal-800);
   --bg-app-active: var(--color-coal-400);
