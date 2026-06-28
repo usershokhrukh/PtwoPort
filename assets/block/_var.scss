@@ -1,12 +1,15 @@
 :root {
   // 1. PRIMITIVE TOKENS (Asliy ranglar bazasi)
-  --color-coal-100: #E3E3E0;
+  --color-coal-100: #E0E0DF;
+  --color-coal-200: #A7A7A6;
+  --color-coal-300: #7B7B7A;
+  --color-coal-400: #4F4F4E;
   --color-coal-500: #242422;
   --color-coal-700: #1C1C1A;
   --color-coal-800: #0E100F;
   --color-coal-hover: #2D2D2A;
   --color-coal-border: #2b2b28;
-  --color-gray-warm: #969690;
+  --color-gray-warm: #a5a5a0;
   --color-pure-white: #ffffff;
 
   // HTTP Metod ranglari (Baza)
@@ -24,10 +27,11 @@
   --bg-app-sidebar: var(--color-coal-700);
   --bg-app-hover: var(--color-coal-hover);
   --bg-app-dark: var(--color-coal-800);
+  --bg-app-active: var(--color-coal-400);
   
   --border-app-default: var(--color-coal-border);
   --text-app-main: var(--color-coal-100);
-  --text-app-muted: var(--color-gray-warm);
+  --text-app-muted: var(--color-coal-300);
 
   // Button Semantic Mapping
   --btn-green-bg: rgba(var(--color-green-base), 0.12);
