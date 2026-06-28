@@ -7,6 +7,7 @@
     @include padding();
     @include display();
     justify-content: space-between;
+    // background-color: red
   }
 
   &__main-text {
@@ -18,7 +19,7 @@
 
   &__mrfd-button {
     @include display();
-    @include paddingBoxAverage();
+    @include boxPaddings();
     @include hoverActiveIconMutedWhite();
     @include borderRadiusMiniBoxes();
     // @include svgDefaultColor();
@@ -28,9 +29,8 @@
     gap: 1px;
     border: none;
     background-color: transparent;
+    height: 28px;
     color: var(--text-app-main);
-    // background-color: red;
-    // height: 25px;
   }
 
   &__m-fright {
@@ -38,7 +38,9 @@
     gap: 20px;
     height: 100%;
     flex-grow: 1;
+    max-width: 620px;
     justify-content: start;
+    flex-shrink: 1;
   }
 
   &__mfr-repob {
@@ -47,6 +49,7 @@
     gap: 1px;
     // background-color: red;
     flex-grow: 1;
+    height: 28px;
     justify-content: start;
     max-width: 400px;
   }
@@ -54,20 +57,21 @@
   &__mfrr-name {
     // @include display();
     position: relative;
-    left: 3px;
+    left: 4px;
     @include hoverActiveMuted();
     @include inter();
-    @include paddingBoxAverage();
+    @include boxPaddings();
     @include borderRadiusMiniBoxes();
     @include buttonOutline();
     @include textOverFlow(200px);
     background-color: transparent;
     border: none;
-    font-size: 14.5px;
+    font-size: 14px;
     height: 100%;
     color: var(--text-app-main);
-    letter-spacing: -0.2px;
-    // font-weight: 300;
+    letter-spacing: -0.5px;
+    height: 100%;
+    font-weight: 300;
   }
 
   &__mfrr-slv {
@@ -77,14 +81,11 @@
 
   &__mfrr-rightb {
     @include display();
-    // @include hoverCoal500();
     @include borderRadiusMiniBoxes();
     position: relative;
-    left: -3px;
+    left: -4px;
     height: 100%;
     flex-grow: 1;
-    // min-width: 130px;
-    // width: fit-content;
     justify-content: start;
   }
 
@@ -92,15 +93,15 @@
     // @include display();
     @include hoverActiveMuted();
     @include inter();
-    @include paddingBoxAverage();
+    @include boxPaddings();
     @include buttonOutline();
     @include textOverFlow(130px);
     height: 100%;
     background-color: transparent;
     border: none;
-    font-size: 14.5px;
+    font-size: 14px;
     color: var(--text-app-main);
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 4px 0px 0px 4px;
     flex-grow: 1;
     letter-spacing: -0.2px;
@@ -116,14 +117,14 @@
     @include display();
     @include hoverActiveMuted();
     @include inter();
-    @include paddingBoxAverage();
+    @include boxPaddings();
     @include buttonOutline();
-    height: 100%;
     background-color: transparent;
     border: none;
-    font-size: 13px;
+    height: 100%;
     border-radius: 0px 4px 4px 0px;
-    padding: 6px 3px;
+    padding: 4px 1px;
+    // display: none;
   }
 
   @media (hover: hover) {
@@ -143,7 +144,113 @@
   }
 
   &__mfr-agent-info {
+    font-weight: 500;
+  }
+
+  &__mfr-agent-info-connected {
     color: rgb(var(--color-green-base));
-    font-weight: 400;
+  }
+
+  &__mfr-agent-info-loading {
+    color: rgb(var(--color-yellow-base));
+  }
+
+  &__mfr-agent-info-reject {
+    color: rgb(var(--color-red-base));
+  }
+
+  &__m-fcent {
+    @include display();
+    flex-grow: 1;
+    height: 28px;
+  }
+
+  &__mfc-input {
+    @include display();
+    @include boxPaddings();
+    @include borderRadiusMiniBoxes();
+    @include buttonOutline();
+    border: 1px solid transparent;
+    border-top: 1px solid var(--color-coal-700);
+    box-shadow: 0px 0px 0px 1px var(--color-coal-400);
+    margin: auto;
+    margin-left: calc(0 - (((100vw - 300px) / 2) - 620px));
+    margin-right: calc(((100vw - 300px) / 2) - 116px);
+    flex-grow: 1;
+    flex-shrink: -1;
+    max-width: 300px;
+    font-size: 13px;
+    height: 100%;
+    gap: 5px;
+    background-color: transparent;
+
+    @media (hover: hover) {
+      &:hover {
+        transition: all 0.2s ease-in-out;
+
+        background-color: var(--color-coal-650);
+        box-shadow: 0px 0px 0px 1px var(--color-coal-300);
+        cursor: pointer;
+      }
+
+      &:hover .header__mfcip-srtx-sf {
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__mfcip-srtx {
+    @include inter();
+    font-size: 13.5px;
+    color: var(--color-coal-300);
+  }
+  &__mfcip-sri {
+    @include display();
+    color: var(--color-coal-200);
+    align-items: start;
+  }
+
+  &__m-fend {
+    @include display();
+    gap: 2px;
+    flex-grow: 1;
+    max-width: 100px;
+  }
+
+  &__mfcip-srtx-sf {
+    opacity: 0;
+    font-size: 13.5px;
+  }
+
+  &__mfend-bvg {
+    @include display();
+    @include hoverActiveIconMutedWhite();
+
+    @include boxPaddings();
+    @include borderRadiusMiniBoxes();
+    @include buttonOutline();
+    background-color: transparent;
+    color: var(--text-app-muted);
+    border: none;
+  }
+
+  &__mfend-prfb {
+    @include display();
+    @include hoverActiveIconMutedWhite();
+    @include boxPaddings();
+    @include borderRadiusMiniBoxes();
+    @include buttonOutline();
+    background-color: transparent;
+    color: var(--text-app-muted);
+    border: none;
+  }
+
+  &__mfend-prfsp {
+    @include display();
+  }
+
+  &__mfend-prfimg {
+    @include borderRadiusMiniBoxes();
   }
 }
