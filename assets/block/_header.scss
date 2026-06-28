@@ -5,12 +5,145 @@
 
   &__main {
     @include padding();
+    @include display();
+    justify-content: space-between;
   }
 
   &__main-text {
-      @include inter();
+    @include inter();
     font-size: 13px;
     font-weight: 300;
-    color: var(--color-pure-white)
+    color: var(--color-pure-white);
+  }
+
+  &__mrfd-button {
+    @include display();
+    @include paddingBoxAverage();
+    @include hoverActiveIconMutedWhite();
+    @include borderRadiusMiniBoxes();
+    // @include svgDefaultColor();
+    @include buttonOutline();
+    justify-content: start;
+    width: fit-content;
+    gap: 1px;
+    border: none;
+    background-color: transparent;
+    color: var(--text-app-main);
+    // background-color: red;
+    // height: 25px;
+  }
+
+  &__m-fright {
+    @include display();
+    gap: 20px;
+    height: 100%;
+    flex-grow: 1;
+    justify-content: start;
+  }
+
+  &__mfr-repob {
+    @include display();
+    @include borderRadiusMiniBoxes();
+    gap: 1px;
+    // background-color: red;
+    flex-grow: 1;
+    justify-content: start;
+    max-width: 400px;
+  }
+
+  &__mfrr-name {
+    // @include display();
+    position: relative;
+    left: 3px;
+    @include hoverActiveMuted();
+    @include inter();
+    @include paddingBoxAverage();
+    @include borderRadiusMiniBoxes();
+    @include buttonOutline();
+    @include textOverFlow(200px);
+    background-color: transparent;
+    border: none;
+    font-size: 14.5px;
+    height: 100%;
+    color: var(--text-app-main);
+    letter-spacing: -0.2px;
+    // font-weight: 300;
+  }
+
+  &__mfrr-slv {
+    @include display();
+    width: 14px;
+  }
+
+  &__mfrr-rightb {
+    @include display();
+    // @include hoverCoal500();
+    @include borderRadiusMiniBoxes();
+    position: relative;
+    left: -3px;
+    height: 100%;
+    flex-grow: 1;
+    // min-width: 130px;
+    // width: fit-content;
+    justify-content: start;
+  }
+
+  &__mfrrr-repoself {
+    // @include display();
+    @include hoverActiveMuted();
+    @include inter();
+    @include paddingBoxAverage();
+    @include buttonOutline();
+    @include textOverFlow(130px);
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 14.5px;
+    color: var(--text-app-main);
+    font-weight: 600;
+    border-radius: 4px 0px 0px 4px;
+    flex-grow: 1;
+    letter-spacing: -0.2px;
+    // padding: 6px 3px 6px 6px;
+    @media (hover: hover) {
+      &:hover + .header__mfrrr-repos-sl {
+        background-color: var(--color-coal-500) !important;
+      }
+    }
+  }
+
+  &__mfrrr-repos-sl {
+    @include display();
+    @include hoverActiveMuted();
+    @include inter();
+    @include paddingBoxAverage();
+    @include buttonOutline();
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    border-radius: 0px 4px 4px 0px;
+    padding: 6px 3px;
+  }
+
+  @media (hover: hover) {
+    .header__mfrrr-repoself:has(~ .header__mfrrr-repos-sl:hover) {
+      background-color: var(--color-coal-500) !important;
+    }
+  }
+
+  &__mfr-agent {
+    @include inter();
+    @include display();
+    font-size: 13.5px;
+    font-weight: 300;
+    color: var(--text-app-main);
+    gap: 4px;
+    letter-spacing: -0.5px;
+  }
+
+  &__mfr-agent-info {
+    color: rgb(var(--color-green-base));
+    font-weight: 400;
   }
 }
