@@ -1,4 +1,4 @@
-Logo : ![logo][./public/logo/logo-fill.svg]
+Logo : ![logo](./public/logo/logo-fill.svg)
 
 
 
