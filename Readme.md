@@ -1,6 +1,6 @@
-<p style="display: flex, align-items: center, gap: 5px">logo: <img src="./public/logo/logo-fill.svg" width="48"></p> 
 
-# 🚀 PtwoPort — Visual Mock API Generator
+
+# <img src="./public/logo/logo-fill.svg" width="48"> PtwoPort — Visual Mock API Generator
 
 **PtwoPort** — dasturchilar uchun backend kodini qoʻlda yozmasdan, vizual tarzda **Mock API** endpointlarini chizish imkonini beruvchi SaaS platformadir. Barcha ma'lumotlar foydalanuvchining shaxsiy kompyuteridagi `db.json` fayliga real vaqtda yozib boriladi!
 
