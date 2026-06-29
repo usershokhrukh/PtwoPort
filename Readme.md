@@ -1,4 +1,4 @@
-Logo : ![logo][./public/logo/logo-fill.svg]
+Logo : ![logo](<img src="./public/logo/logo-fill.svg" width="48">)
 
 
 
