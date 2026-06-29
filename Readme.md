@@ -1,5 +1,4 @@
-Logo : ![logo](<img src="./public/logo/logo-fill.svg" width="48">)
-#+html: <img src="./public/logo/logo-fill.svg" width="48">
+logo: <img src="./public/logo/logo-fill.svg" width="48">
 
 # 🚀 PtwoPort — Visual Mock API Generator
 
