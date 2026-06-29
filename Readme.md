@@ -1,4 +1,4 @@
-logo: <img src="./public/logo/logo-fill.svg" width="48">
+<p style="display: flex, align-items: center, gap: 5px">logo: <img src="./public/logo/logo-fill.svg" width="48"></p> 
 
 # 🚀 PtwoPort — Visual Mock API Generator
 
