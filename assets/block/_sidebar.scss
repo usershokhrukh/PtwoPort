@@ -23,23 +23,196 @@
   &::-webkit-scrollbar-track {
     border-radius: 10px;
   }
-  
+
   /* Handle */
   &::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 5px var(--text-app-muted);
     border-radius: 10px;
+
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: inset 0 0 5px var(--text-app-main);
+      }
+    }
   }
 
   &__main {
     @include padding();
     flex-grow: 1;
     height: 100%;
+    width: 100%;
   }
 
   &__main-text {
     @include inter();
     font-size: 13px;
     font-weight: 300;
-    color: var(--color-pure-white)
+    color: var(--color-pure-white);
+  }
+
+  &__m-top-lh {
+    @include display();
+    // background-color: red;
+    justify-content: space-between;
+    // gap: 3px;
+    padding: 4px 0px;
+    width: 100%;
+    border-bottom: 1px solid var(--border-app-default);
+  }
+
+  &__mtlh-conspan {
+    @include display();
+    justify-content: space-between;
+    gap: 5px;
+    flex-grow: 1;
+  }
+
+  &__mtlhcsp-main-txt {
+    @include jet();
+    @include display();
+    gap: 7px;
+    font-size: 13px;
+    color: var(--color-coal-200);
+    font-weight: 300;
+    letter-spacing: 0.4px;
+  }
+
+  &__mtlhcsp-mi {
+    @include display();
+    @include hoverActiveIconMutedWhite();
+    @include boxPaddings();
+    @include borderRadiusMiniBoxes();
+    @include buttonOutline();
+    // @include hoverVisible();
+    background-color: transparent;
+    color: var(--color-coal-400);
+
+    border: none;
+  }
+
+  &__mtlh-right-i {
+    @include display();
+    @include hoverActiveIconMutedWhite();
+    // @include hoverVisible();
+
+    @include boxPaddings();
+    @include borderRadiusMiniBoxes();
+    @include buttonOutline();
+    background-color: transparent;
+    color: var(--color-coal-400);
+    border: none;
+  }
+
+  &__mtlhcsp-circle {
+    @include borderRadiusMiniBoxes();
+    padding: 3px;
+    background-color: var(--color-coal-300);
+    opacity: 0.9;
+  }
+
+  &__mtlhcspcirc-full {
+    background-color: rgb(var(--color-green-base));
+  }
+
+  &__mtlhcsp-port {
+    @include boxPaddings();
+    @include borderRadiusDefault();
+    // background-color: red;
+    padding: 3px;
+    // border: 1px solid var(--border-app-default);
+    // background-color: var(--border-app-default);
+    color: var(--color-coal-100);
+  }
+
+  &__mtlhcspcirc-reject {
+    background-color: rgb(var(--color-red-base));
+  }
+
+  &__mtlhcspcirc-loading {
+    background-color: rgb(var(--color-yellow-base));
+  }
+
+  &__m-form {
+    @include display();
+    width: 100%;
+    padding: 10px 0px;
+    justify-content: space-between;
+    gap: 6px;
+    position: relative;
+  }
+
+  &__mf-input {
+    @include display();
+    @include inter();
+    @include boxPaddings();
+    @include borderRadiusMiniBoxes();
+    @include buttonOutline();
+    @include hoverBlackInputs();
+    font-size: 12px;
+    padding: 5px 5px 5px 28px;
+    background-color: transparent;
+    color: var(--text-app-main);
+    border: 1px solid var(--color-coal-400);
+    box-shadow: 0px 0px 0px 2px transparent;
+    transition: all 0.2s ease-in-out;
+    &:focus {
+      box-shadow: 0px 0px 0px 2px rgb(var(--color-pure-blue));
+      border: 1px solid transparent;
+    }
+    flex-grow: 1;
+    height: 26px;
+  }
+
+  &__mf-sri {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    color: var(--color-coal-400);
+    z-index: 3;
+    svg {
+      width: 16px !important;
+      height: 16px !important;
+    }
+  }
+
+  &__mf-button {
+    @include display();
+    @include inter();
+    @include buttonOutlineColor(--color-brand-accent-900);
+    @include borderRadiusMiniBoxes();
+    padding: 4px 8px 4px 8px;
+    font-size: 11.8px;
+
+    background-color: rgb(var(--color-brand-accent-900), 0.1);
+    border: 1px solid rgb(var(--color-brand-accent-900), 0.2);
+    color: rgb(var(--color-brand-accent-500), 0.8);
+    // color: var(--color-coal-100);
+    height: 26px;
+    box-shadow: 0px 0px 4px 0px rgb(var(--color-brand-accent-900), 0.2);
+    letter-spacing: 0.1px;
+    transition: all 0s ease-in-out;
+    cursor: pointer;
+    @media (hover: hover) {
+      &:hover {
+        background-color: rgb(var(--color-brand-accent-900), 0.4);
+        color: rgb(var(--color-brand-accent-500), 1);
+      }
+    }
+
+    &:active {
+      background-color: rgb(var(--color-brand-accent-900), 0.7);
+      color: rgb(var(--color-brand-accent-500), 200);
+      color: var(--text-app-main)
+    }
+  }
+
+  &__mfb-svg {
+    position: relative;
+    top: 1px;
+    svg {
+      width: 15px !important;
+      height: 15px !important;
+      stroke-width: 1px;
+    }
   }
 }

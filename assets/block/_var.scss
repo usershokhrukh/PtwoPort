@@ -19,10 +19,12 @@
   --color-blue-base: 78, 205, 196;
   --color-yellow-base: 244, 162, 97;
   --color-red-base: 	239,	62,	66;
+  --color-pure-blue: 49, 130, 206;
   
   --color-green-solid: #68A670;
   --color-red-solid: #D15A42;
-  --color-brand-accent: #E07A5F; 
+  --color-brand-accent-900: 255	,90	,54; 
+  --color-brand-accent-500: 255	,189	,174;
 
   // 2. SEMANTIC TOKENS (Uslub va funksiya chalkashligi uchun)
   --bg-app-main: var(--color-coal-500);

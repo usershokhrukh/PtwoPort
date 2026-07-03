@@ -2,7 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select:text
 }
+
+button  {
+  -webkit-tap-highlight-color: transparent !important;
+  user-select: none;
+}
+
 
 body {
   @include display();
@@ -19,3 +26,4 @@ svg {
   height: 18px;
   stroke-width: 1.3px !important;
 }
+
