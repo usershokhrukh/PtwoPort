@@ -63,7 +63,7 @@
     @include boxPaddings();
     @include borderRadiusMiniBoxes();
     @include buttonOutline();
-    @include textOverFlow(200px);
+    @include textOverFlow();
     background-color: transparent;
     border: none;
     font-size: 14px;
@@ -95,7 +95,7 @@
     @include inter();
     @include boxPaddings();
     @include buttonOutline();
-    @include textOverFlow(130px);
+    @include textOverFlow();
     height: 100%;
     background-color: transparent;
     border: none;

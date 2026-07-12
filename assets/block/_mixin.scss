@@ -45,6 +45,24 @@
   }
 }
 
+@mixin hoverCoal450() {
+  cursor: pointer !important;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-coal-450) !important;
+    }
+  }
+}
+
+@mixin hoverColorCoal100() {
+  cursor: pointer !important;
+  @media (hover: hover) {
+    &:hover {
+      color: var(--color-coal-100) !important;
+    }
+  }
+}
+
 @mixin hoverActiveIconMutedWhite() {
   cursor: pointer !important;
   @media (hover: hover) {
@@ -105,14 +123,13 @@
     z-index: 2;
   }
 }
-@mixin textOverFlow($width) {
+@mixin textOverFlow() {
   max-width: fit-content;
   text-align: start;
   white-space: nowrap;
   overflow: hidden;
   flex-grow: 1;
   width: 20px;
-  // max-width: $width;
   justify-content: start;
   text-overflow: ellipsis;
 }
