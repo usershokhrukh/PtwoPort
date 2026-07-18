@@ -497,6 +497,8 @@ svg {
   align-items: center;
   justify-content: center;
   font-size: 8.5px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
 }
 .sidebar__fcstxt-get {
   color: rgb(var(--color-green-base));

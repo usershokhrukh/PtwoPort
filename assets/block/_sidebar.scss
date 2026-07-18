@@ -368,6 +368,8 @@
     @include jet();
     @include display();
     font-size: 8.5px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
     // background-color: red;
   }
 
