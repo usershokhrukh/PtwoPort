@@ -22,8 +22,8 @@
   --color-red-solid: #D15A42;
   --color-brand-accent-900: 255	,90	,54;
   --color-brand-accent-500: 255	,189	,174;
-  --bg-app-main: var(--color-coal-500);
-  --bg-app-sidebar: var(--color-coal-600);
+  --bg-app-main: var(--color-coal-600);
+  --bg-app-sidebar: var(--color-coal-500);
   --bg-app-hover: var(--color-coal-hover);
   --bg-app-dark: var(--color-coal-800);
   --bg-app-active: var(--color-coal-400);
@@ -100,12 +100,6 @@ svg {
   flex-grow: 1;
   height: 100%;
   width: 100%;
-}
-.sidebar__main-text {
-  font-family: "Inter";
-  font-size: 13px;
-  font-weight: 300;
-  color: var(--color-pure-white);
 }
 .sidebar__m-top-lh {
   display: flex;
@@ -406,7 +400,20 @@ svg {
 .sidebar__fct-arrspn {
   color: var(--color-coal-400);
   position: relative;
-  top: 2px;
+  left: 2px;
+}
+@media (hover: hover) {
+  .sidebar__fct-arrspn:hover {
+    color: var(--color-coal-100);
+  }
+}
+.sidebar__fct-arrspn:active {
+  color: var(--color-coal-100);
+}
+.sidebar__fct-arrspn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .sidebar__fct-mtxt {
   font-family: "Inter";
@@ -419,9 +426,8 @@ svg {
   width: 20px;
   justify-content: start;
   text-overflow: ellipsis;
-  font-size: 13px;
+  font-size: 12.5px;
   color: var(--color-coal-100);
-  opacity: 0.9;
   flex-grow: 1;
   font-weight: 600;
 }
@@ -437,7 +443,7 @@ svg {
 }
 .sidebar__fctx-spv {
   position: relative;
-  top: 3px;
+  top: 1px;
   color: var(--color-coal-300);
 }
 .sidebar__fctx-spv svg {
@@ -490,11 +496,10 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
+  font-size: 9.5px;
 }
 .sidebar__fcstxt-get {
   color: rgb(var(--color-green-base));
-  opacity: 0.6;
 }
 .sidebar__fcmens-stxt-pill-get, .sidebar__fcmens-stxt-pill-put, .sidebar__fcmens-stxt-pill-post, .sidebar__fcmens-stxt-pill-delete {
   padding: 1px 7px;
@@ -514,24 +519,22 @@ svg {
 }
 .sidebar__fcstxt-put {
   color: rgb(var(--color-blue-base));
-  opacity: 0.6;
 }
 .sidebar__fcstxt-post {
   color: rgb(var(--color-yellow-base));
-  opacity: 0.6;
 }
 .sidebar__fcstxt-delete {
   color: rgb(var(--color-red-base));
-  opacity: 0.6;
 }
 .sidebar__fcmemds-mtxt {
   font-family: "Inter";
-  font-size: 13px;
-  color: var(--color-coal-100);
-  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-pure-white);
+  font-weight: 300;
+  letter-spacing: -0.4px;
 }
 .sidebar__fcmemds-mtxt-pill {
-  color: var(--color-coal-200) !important;
+  color: var(--color-pure-white) !important;
 }
 .sidebar__fct-spmore {
   cursor: pointer !important;
