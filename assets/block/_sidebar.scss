@@ -43,13 +43,6 @@
     width: 100%;
   }
 
-  &__main-text {
-    @include inter();
-    font-size: 13px;
-    font-weight: 300;
-    color: var(--color-pure-white);
-  }
-
   &__m-top-lh {
     @include display();
     // background-color: red;
@@ -269,10 +262,6 @@
     position: relative;
   }
 
-  &__fc-topwrap-child {
-    // border-radius: 0px !important;
-  }
-
   &__fc-top {
     @include display();
     width: 100%;
@@ -292,15 +281,27 @@
   &__fct-arrspn {
     color: var(--color-coal-400);
     position: relative;
-    top: 2px;
+    left: 2px;
+    // top: 2px;
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--color-coal-100);
+      }
+    }
+
+    &:active {
+      color: var(--color-coal-100);
+    }
+
+  user-select: none;
   }
 
   &__fct-mtxt {
     @include inter();
     @include textOverFlow();
-    font-size: 13px;
+    font-size: 12.5px;
     color: var(--color-coal-100);
-    opacity: 0.9;
     flex-grow: 1;
     font-weight: 600;
   }
@@ -317,7 +318,7 @@
 
   &__fctx-spv {
     position: relative;
-    top: 3px;
+    top: 1px;
     color: var(--color-coal-300);
     svg {
       width: 16px;
@@ -366,12 +367,13 @@
   &__fcmeds-stxt {
     @include jet();
     @include display();
-    font-size: 10px;
+    font-size: 9.5px;
+    // background-color: red;
   }
 
   &__fcstxt-get {
     color: rgb(var(--color-green-base));
-    opacity: 0.6;
+    // opacity: 0.6;
   }
 
   &__fcmens-stxt-pill-get,
@@ -395,29 +397,29 @@
   }
   &__fcstxt-put {
     color: rgb(var(--color-blue-base));
-    opacity: 0.6;
+    // opacity: 0.6;
   }
   &__fcstxt-post {
     color: rgb(var(--color-yellow-base));
-    opacity: 0.6;
+    // opacity: 0.6;
   }
   &__fcstxt-delete {
     color: rgb(var(--color-red-base));
-    opacity: 0.6;
+    // opacity: 0.6;
   }
 
   &__fcmemds-mtxt {
     @include inter();
-    font-size: 13px;
-    color: var(--color-coal-100);
-    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-pure-white);
+    // font-weight: 700;
+    font-weight: 300;
     // background-color: red
+    letter-spacing: -0.4px;
   }
 
-
-
   &__fcmemds-mtxt-pill {
-    color: var(--color-coal-200) !important;
+    color: var(--color-pure-white) !important;
     // display: none
   }
 
@@ -449,6 +451,6 @@
   }
 
   &__fct-mtxt-var {
-    color: rgb(var(--color-yellow-base))
+    color: rgb(var(--color-yellow-base));
   }
 }
