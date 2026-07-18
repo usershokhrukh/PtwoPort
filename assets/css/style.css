@@ -477,7 +477,7 @@ svg {
   border-radius: 6px !important;
   justify-content: start;
   position: relative;
-  gap: 10px;
+  gap: 5px;
   width: 100%;
   padding: 5px;
 }
@@ -488,7 +488,7 @@ svg {
   top: 2.3px !important;
 }
 .sidebar__fcm-endstatus-child {
-  gap: 8px;
+  gap: 4px;
   padding: 5px;
 }
 .sidebar__fcmeds-stxt {
@@ -496,7 +496,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 9.5px;
+  font-size: 8.5px;
 }
 .sidebar__fcstxt-get {
   color: rgb(var(--color-green-base));
