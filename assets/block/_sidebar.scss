@@ -37,10 +37,11 @@
   // }
 
   &__main {
-    @include padding();
+    // @include padding();
     flex-grow: 1;
     height: 100%;
     width: 100%;
+    padding: 0px 10px 10px 10px;
   }
 
   &__m-top-lh {
@@ -78,7 +79,7 @@
     @include buttonOutline();
     // @include hoverVisible();
     background-color: transparent;
-    color: var(--color-coal-400);
+    color: var(--color-coal-200);
 
     border: none;
   }
@@ -92,7 +93,7 @@
     @include borderRadiusMiniBoxes();
     @include buttonOutline();
     background-color: transparent;
-    color: var(--color-coal-400);
+    color: var(--color-coal-200);
     border: none;
   }
 
@@ -256,6 +257,7 @@
   &__fc-topwrap {
     @include display();
     @include hoverCoal450();
+    @include activeCoal450();
     @include borderRadiusMiniBoxes();
     justify-content: space-between;
     width: 100%;
@@ -279,6 +281,7 @@
   }
 
   &__fct-arrspn {
+    @include SVG20();
     color: var(--color-coal-400);
     position: relative;
     left: 2px;
@@ -342,6 +345,7 @@
   &__fcm-endstatus {
     @include display();
     @include hoverCoal450();
+    @include activeCoal450();
     @include borderRadiusMiniBoxes();
     justify-content: start;
     position: relative;
