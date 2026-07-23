@@ -2,14 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  user-select:text
-}
-
-button  {
+  user-select: text;
   -webkit-tap-highlight-color: transparent !important;
-  user-select: none;
 }
 
+button,
+span {
+  -webkit-tap-highlight-color: transparent !important;
+}
 
 body {
   @include display();
@@ -20,10 +20,8 @@ body {
   min-height: 100vh;
 }
 
-
 svg {
   width: 18px;
   height: 18px;
   stroke-width: 1.3px !important;
 }
-

@@ -45,12 +45,24 @@
   }
 }
 
+@mixin activeCoal500 {
+  &:active {
+      background-color: var(--color-coal-500) !important;
+  }
+}
+
 @mixin hoverCoal450() {
   cursor: pointer !important;
   @media (hover: hover) {
     &:hover {
       background-color: var(--color-coal-450) !important;
     }
+  }
+}
+
+@mixin activeCoal450 {
+  &:active {
+      background-color: var(--color-coal-450) !important;
   }
 }
 
@@ -68,13 +80,13 @@
   @media (hover: hover) {
     &:hover {
       background-color: var(--bg-app-hover) !important;
-      color: var(--text-app-main) !important;
+      color: var(--color-pure-white) !important;
     }
   }
 
   &:active {
     background-color: var(--bg-app-active) !important;
-    color: var(--text-app-main) !important;
+    color: var(--color-pure-white) !important;
   }
 }
 
@@ -145,11 +157,24 @@
 }
 
 @mixin hoverBlackInputs() {
-  @media (hover:hover) { 
+  @media (hover: hover) {
     &:hover {
       background-color: var(--color-coal-650);
-      border: 1px solid var(--text-app-muted)
+      border: 1px solid var(--text-app-muted);
     }
-    
+  }
+}
+
+@mixin SVG18() {
+  svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+
+@mixin SVG20() {
+  svg {
+    width: 20px !important;
+    height: 20px !important;
   }
 }
