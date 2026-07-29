@@ -75,11 +75,11 @@
       background-color: transparent;
     }
 
-    &:focus::after {
+    &:focus-visible::after {
       background-color: transparent;
     }
 
-    &:has(+ .workright__t-spns:focus)::after {
+    &:has(+ .workright__t-spns:focus-visible)::after {
       background-color: transparent;
     }
   }
