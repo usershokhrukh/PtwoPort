@@ -1103,9 +1103,9 @@ svg {
 .workright__tspns-aft:has(+ .workright__t-spns:active)::after {
   background-color: transparent;
 }
-.workright__tspns-aft:focus::after {
+.workright__tspns-aft:focus-visible::after {
   background-color: transparent;
 }
-.workright__tspns-aft:has(+ .workright__t-spns:focus)::after {
+.workright__tspns-aft:has(+ .workright__t-spns:focus-visible)::after {
   background-color: transparent;
 }/*# sourceMappingURL=style.css.map */
