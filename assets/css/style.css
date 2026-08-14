@@ -758,7 +758,6 @@ svg {
   gap: 1px;
 }
 .sidebar__f-cards-child {
-  margin-top: 15px !important;
   gap: 0px;
 }
 .sidebar__fc-topwrap {
@@ -841,6 +840,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: start;
   flex-grow: 1;
   gap: 10px;
 }

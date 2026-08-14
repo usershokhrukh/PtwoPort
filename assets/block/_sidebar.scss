@@ -250,7 +250,6 @@
   }
 
   &__f-cards-child {
-    margin-top: 15px !important;
     gap: 0px;
   }
 
@@ -315,6 +314,7 @@
 
   &__fc-txtcont {
     @include display();
+    justify-content: start;
     flex-grow: 1;
     gap: 10px;
   }
