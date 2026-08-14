@@ -1,0 +1,41 @@
+.main-section {
+  @include display();
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  &__top-nav {
+    @include display();
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    justify-content: start;
+    align-items: start;
+    padding: 4px 10px;
+    background-color: var(--bg-app-sidebar);
+    height: 37px;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid var(--border-app-default);
+    max-width: 100%;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__tnav-tabs {
+    @include display();
+    justify-content: start;
+    overflow: auto;
+    grid-row: 1/2;
+    grid-column: 1/2
+  }
+
+  &__tnav-right {
+    @include display();
+    justify-content: space-between;
+    // flex-grow: 2;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+}

@@ -495,14 +495,13 @@ svg {
   flex-grow: 1;
   height: 100%;
   width: 100%;
-  padding: 0px 10px 10px 10px;
 }
 .sidebar__m-top-lh {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  padding: 4px 0px;
+  padding: 4px 10px;
   width: 100%;
   border-bottom: 1px solid var(--border-app-default);
 }
@@ -615,7 +614,7 @@ svg {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 10px;
   justify-content: space-between;
   gap: 6px;
   position: relative;
@@ -661,7 +660,7 @@ svg {
 .sidebar__mf-sri {
   position: absolute;
   top: 15px;
-  left: 8px;
+  left: 18px;
   color: var(--color-coal-400);
   z-index: 3;
 }
@@ -722,7 +721,7 @@ svg {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  padding: 0px 5px 0px 0px;
+  padding: 0px 10px;
   gap: 4px;
   max-height: calc(100vh - 105px);
   overflow: auto;
@@ -1108,4 +1107,50 @@ svg {
 }
 .workright__tspns-aft:has(+ .workright__t-spns:focus-visible)::after {
   background-color: transparent;
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.main-section__top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  justify-content: start;
+  align-items: start;
+  padding: 4px 10px;
+  background-color: var(--bg-app-sidebar);
+  height: 37px;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid var(--border-app-default);
+  max-width: 100%;
+}
+.main-section__top-nav::-webkit-scrollbar {
+  display: none;
+}
+.main-section__tnav-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+  overflow: auto;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.main-section__tnav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  grid-row: 1/2;
+  grid-column: 2/3;
 }/*# sourceMappingURL=style.css.map */

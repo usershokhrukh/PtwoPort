@@ -37,21 +37,19 @@
   // }
 
   &__main {
-    // @include padding();
     flex-grow: 1;
     height: 100%;
     width: 100%;
-    padding: 0px 10px 10px 10px;
+    // padding: 0px 10px 10px 10px;
   }
 
   &__m-top-lh {
     @include display();
-    // background-color: red;
     justify-content: space-between;
-    // gap: 3px;
-    padding: 4px 0px;
+    padding: 4px 10px;
     width: 100%;
     border-bottom: 1px solid var(--border-app-default);
+    // background-color: red
   }
 
   &__mtlh-conspan {
@@ -111,7 +109,6 @@
   &__mtlhcsp-port {
     @include boxPaddings();
     @include borderRadiusDefault();
-    // background-color: red;
     padding: 3px;
     // border: 1px solid var(--border-app-default);
     // background-color: var(--border-app-default);
@@ -129,7 +126,7 @@
   &__m-form {
     @include display();
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px 10px;
     justify-content: space-between;
     gap: 6px;
     position: relative;
@@ -160,7 +157,7 @@
   &__mf-sri {
     position: absolute;
     top: 15px;
-    left: 8px;
+    left: 18px;
     color: var(--color-coal-400);
     z-index: 3;
     svg {
@@ -215,7 +212,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    padding: 0px 5px 0px 0px;
+    padding: 0px 10px;
     gap: 4px;
     max-height: calc(100vh - 105px);
     overflow: auto;
