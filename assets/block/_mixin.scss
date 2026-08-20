@@ -47,7 +47,7 @@
 
 @mixin activeCoal500 {
   &:active {
-      background-color: var(--color-coal-500) !important;
+    background-color: var(--color-coal-500) !important;
   }
 }
 
@@ -62,7 +62,7 @@
 
 @mixin activeCoal450 {
   &:active {
-      background-color: var(--color-coal-450) !important;
+    background-color: var(--color-coal-450) !important;
   }
 }
 
@@ -88,6 +88,62 @@
     background-color: var(--bg-app-active) !important;
     color: var(--color-pure-white) !important;
   }
+}
+
+@mixin hoverAppHoverWhiteText() {
+  cursor: pointer !important;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--bg-app-hover) !important;
+      color: var(--color-pure-white) !important;
+    }
+  }
+
+  &:active {
+    background-color: var(--bg-app-hover) !important;
+    color: var(--color-pure-white) !important;
+  }
+}
+
+@mixin hoverOnlyAppHoverWhiteText() {
+  cursor: pointer !important;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--bg-app-hover) !important;
+      color: var(--color-pure-white) !important;
+    }
+  }
+}
+
+@mixin hoverTextWhite() {
+  cursor: pointer !important;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--color-pure-white) !important;
+    }
+  }
+
+  &:active {
+    color: var(--color-pure-white) !important;
+  }
+}
+
+@mixin hoverAppHover() {
+  cursor: pointer !important;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--bg-app-hover) !important;
+    }
+  }
+
+  &:active {
+    background-color: var(--bg-app-hover) !important;
+  }
+}
+
+@mixin userSelectNone() {
+  user-select: none !important;
 }
 
 @mixin borderRadiusDefault() {
