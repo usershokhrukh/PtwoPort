@@ -48,8 +48,8 @@
     justify-content: space-between;
     padding: 4px 10px;
     width: 100%;
-    border-bottom: 1px solid var(--border-app-default);
-    // background-color: red
+    // border-bottom: 1px solid var(--border-app-default);
+    // background-color: red;
   }
 
   &__mtlh-conspan {
@@ -78,7 +78,7 @@
     // @include hoverVisible();
     background-color: transparent;
     color: var(--color-coal-200);
-
+    height: 26px;
     border: none;
   }
 
@@ -93,6 +93,7 @@
     background-color: transparent;
     color: var(--color-coal-200);
     border: none;
+    height: 26px;
   }
 
   &__mtlhcsp-circle {
